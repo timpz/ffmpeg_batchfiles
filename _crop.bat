@@ -16,4 +16,4 @@ set /p offsetX=
 echo Please enter the X offset:
 set /p offsetY=
 
-ffmpeg -i %file% -filter:v "crop=%width%:%height%:%offsetX%:%offsetY%" %filename%_cropped.%filetype%
+ffmpeg -i %file% -filter:v "crop=%width%:%height%:%offsetX%:%offsetY%" %filename%_cropped%filetype%
